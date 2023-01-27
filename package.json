@@ -1,0 +1,32 @@
+{
+  "name": "banking-commands",
+  "version": "1.0.0",
+  "description": "A cli for banking system",
+  "main": "bin/index.js",
+  "bin": {
+    "bank": "bin/index.js"
+  },
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rgoyal0001/banking-application-cli.git"
+  },
+  "keywords": [
+    "cli",
+    "banking"
+  ],
+  "author": "Raman Goyal",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/rgoyal0001/banking-application-cli/issues"
+  },
+  "homepage": "https://github.com/rgoyal0001/banking-application-cli#readme",
+  "dependencies": {
+    "cli-table": "^0.3.11",
+    "commander": "^10.0.0",
+    "conf": "^11.0.1"
+  }
+}
