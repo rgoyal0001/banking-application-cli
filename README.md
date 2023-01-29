@@ -7,7 +7,7 @@ There are two ways-
 
 1) Commands are -
 
-To create an account- CREATE ACC <account_number> <account_holder_name>
+To create an account- <b>CREATE ACC <account_number> <account_holder_name></b>
 
 example- CREATE ACC 001 Rohan
 
