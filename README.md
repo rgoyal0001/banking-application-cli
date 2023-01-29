@@ -38,6 +38,6 @@ example- "bank DEPOSITE 001 10000"
 
 example- "bank WITHDRAW 001 1000"
 
-  To check available balance- <b> BALANCE <account_number> </b>
+  To check available balance- <b>bank BALANCE <account_number> </b>
 
 example- "bank BALANCE 001"
