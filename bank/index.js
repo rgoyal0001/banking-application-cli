@@ -1,36 +1,27 @@
 #!/usr/bin/env node
-
 import Conf from 'conf';
 import {program} from 'commander';
-
 const config = new Conf({projectName: 'user'});
-const user='user'
-const schema={
-    banking:{
-        id:'',
-        name:'',
-        amount:0
-    }
-}
-function create(id,name){
-   
-    config.set('id',id)
-    config.set('name',name)
-    config.set('balance',0)
 
+function create(id,name){
+    config.set(`${id}.id`,id)
+    config.set(`${id}.name`,name)
+    config.set(`${id}.balance`,0)
 }
 
 function balance(id){
-    console.log(config.get('name'))
-    console.log(config.get('balance'))
+    console.log(config.get(`${id}.name`),config.get(`${id}.balance`))
 }
 function withdraw(id,amount){
-    const rem=config.get('balance')-amount;
-    config.set('balance',rem)
+    const av=Number(config.get(`${id}.balance`))
+    const new_bal=av-Number(amount);
+    config.set(`${id}.balance`,new_bal)
 }
+
 function deposite(id,amount){
-    const new_bal=config.get('balance')+amount
-    config.set('balance',new_bal)
+    const av=Number(config.get(`${id}.balance`))
+    const new_bal=av+Number(amount)
+    config.set(`${id}.balance`,new_bal)
 }
 
 

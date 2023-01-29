@@ -4,7 +4,11 @@
   "description": "A cli for banking system",
   "main": "bin/index.js",
   "bin": {
-    "bank": "bin/index.js"
+    "bank": "bank/index.js",
+    "CREATE": "bin/create.js",
+    "BALANCE": "bin/balance.js",
+    "WITHDRAW": "bin/withdraw.js",
+    "DEPOSITE": "bin/deposite.js"
   },
   "type": "module",
   "scripts": {
@@ -25,7 +29,6 @@
   },
   "homepage": "https://github.com/rgoyal0001/banking-application-cli#readme",
   "dependencies": {
-    "cli-table": "^0.3.11",
     "commander": "^10.0.0",
     "conf": "^11.0.1"
   }
