@@ -1,6 +1,6 @@
 {
   "name": "banking-commands",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "A cli for banking system",
   "main": "bin/index.js",
   "bin": {
