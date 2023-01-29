@@ -30,14 +30,14 @@ example- "BALANCE ACC 001"
 
 example- "bank CREATE 001 Rohan"
 
-  To deposite some amount- <b> DEPOSITE <account_number> <deposite_amount> </b>
+  To deposite some amount- <b> bank DEPOSITE <account_number> <deposite_amount> </b>
 
 example- "bank DEPOSITE 001 10000"
 
-  To withdraw amount- <b> WITHDRAW <account_number> <withdraw_amount> </b>
+  To withdraw amount- <b> bank WITHDRAW <account_number> <withdraw_amount> </b>
 
 example- "bank WITHDRAW 001 1000"
 
-  To check available balance- <b> BALANCE <account_number> </b>
+  To check available balance- <b>bank BALANCE <account_number> </b>
 
 example- "bank BALANCE 001"
